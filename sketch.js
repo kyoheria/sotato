@@ -16,7 +16,7 @@ function setup() {
 }
 
 function draw() {
-	backgroud();
+	background(255, 255, 255);
 	if(mouseX>50 &&mouseX<150){
 		if(mouseY>height-150&&mouseY<height-100){
 			sotato.changeAnimation('left');
