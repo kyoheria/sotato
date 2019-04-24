@@ -18,15 +18,19 @@ function setup() {
 function draw() {
 
 	if(mouseX>50 &&mouseX<150){
-		if(mouseY>130&&mouseY<150){
+		if(mouseY>height-150&&mouseY<height-100){
 			sotato.changeAnimation('left');
 		}
 	}
-	if(mouseX>450 &&mouseX<550){
-		if(mouseY>130&&mouseY<150){
+	if(mouseX>width-150 &&mouseX<width-50){
+		if(mouseY>height-150&&mouseY<height-100){
 			sotato.changeAnimation('right');
 		}
 	}
+
+	fill(223,104,168);
+	rect(50,height-150,100,50);
+	rect(width-150,height-150,100,50);
 
 	drawSprites();
 
