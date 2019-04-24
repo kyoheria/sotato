@@ -16,15 +16,17 @@ function setup() {
 }
 
 function draw() {
-
+	backgroud();
 	if(mouseX>50 &&mouseX<150){
 		if(mouseY>height-150&&mouseY<height-100){
 			sotato.changeAnimation('left');
+			sotato.velocity.x = -2;
 		}
 	}
 	if(mouseX>width-150 &&mouseX<width-50){
 		if(mouseY>height-150&&mouseY<height-100){
 			sotato.changeAnimation('right');
+			sotato.velocity.x = 2;
 		}
 	}
 
