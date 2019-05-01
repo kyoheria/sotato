@@ -59,7 +59,7 @@ function draw() {
 
 	fill(223,104,168);
 	rect(50,height-150,100,50);
-	rect(width-150,height-150,100,50
+	rect(width-150,height-150,100,50);
 	rect(width/2-50,height-200,100,50);
 	rect(width/2-50,height-100,100,50);
 	drawSprites();
