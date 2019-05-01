@@ -33,11 +33,28 @@ function draw() {
 			sotato.velocity.x = 0;
 		}
 	}
+	if(mouseX>width/2-50 &&mouseX<width/2+50){
+		if(mouseY>height-200&&mouseY<height-150){
+			sotato.changeAnimation('left');
+			sotato.velocity.y = 2;
+		}else{
+			sotato.velocity.y = 0;
+		}
+	}
+	if(mouseX>width/2-50 &&mouseX<width/2+50){
+		if(mouseY>height-100&&mouseY<height-50){
+			sotato.changeAnimation('right');
+			sotato.velocity.y = -2;
+		}else{
+			sotato.velocity.y = 0;
+		}
+	}
 
 	fill(223,104,168);
 	rect(50,height-150,100,50);
-	rect(width-150,height-150,100,50);
-
+	rect(width-150,height-150,100,50
+	rect(width/2-50,height-200,100,50);
+	rect(width/2-50,height-100,100,50);
 	drawSprites();
 
 }
