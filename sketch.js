@@ -32,6 +32,8 @@ function draw() {
 		}else{
 			sotato.velocity.x = 0;
 		}
+	}else{
+			sotato.velocity.x = 0;
 	}
 	if(mouseX>width/2-50 &&mouseX<width/2+50){
 		if(mouseY>height-200&&mouseY<height-150){
@@ -40,6 +42,8 @@ function draw() {
 		}else{
 			sotato.velocity.y = 0;
 		}
+	}else{
+			sotato.velocity.y = 0;
 	}
 	if(mouseX>width/2-50 &&mouseX<width/2+50){
 		if(mouseY>height-100&&mouseY<height-50){
@@ -49,6 +53,9 @@ function draw() {
 			sotato.velocity.y = 0;
 		}
 	}
+	else{
+			sotato.velocity.y = 0;
+		}
 
 	fill(223,104,168);
 	rect(50,height-150,100,50);
