@@ -21,12 +21,16 @@ function draw() {
 		if(mouseY>height-150&&mouseY<height-100){
 			sotato.changeAnimation('left');
 			sotato.velocity.x = -2;
+		}else{
+			sotato.velocity.x = 0;
 		}
 	}
 	if(mouseX>width-150 &&mouseX<width-50){
 		if(mouseY>height-150&&mouseY<height-100){
 			sotato.changeAnimation('right');
 			sotato.velocity.x = 2;
+		}else{
+			sotato.velocity.x = 0;
 		}
 	}
 
